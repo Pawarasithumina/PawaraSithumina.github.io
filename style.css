@@ -1,0 +1,39 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.links {
+  margin: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+.note {
+  color: #888;
+  margin-top: 40px;
+  font-style: italic;
+}
