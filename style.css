@@ -6,10 +6,26 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   text-align: center;
   max-width: 800px;
   padding: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+.note {
+  color: #888;
+  margin-top: 40px;
+  font-style: italic;
 }
