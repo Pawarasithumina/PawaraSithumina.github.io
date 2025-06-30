@@ -33,4 +33,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+.glow {
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #00ccff;
+  }
+  50% {
+    text-shadow: 0 0 20px #00ccff;
+  }
+}
+
 
