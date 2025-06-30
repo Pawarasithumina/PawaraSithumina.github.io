@@ -4,40 +4,12 @@ body {
   color: #2c3e50;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
-}
-
-
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2em;
-}
-
-.links {
-  margin: 20px;
-}
-
-.links a {
-  text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
-  margin: 0 15px;
-  font-size: 1.1em;
-}
-
-.note {
-  color: #888;
-  margin-top: 40px;
-  font-style: italic;
 }
