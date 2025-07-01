@@ -5,51 +5,105 @@
   <title>Pawara Sithumina | Data Science Student</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* You can move this to your style.css */
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #000000;
+    /* Full page reset and layout */
+    * {
       margin: 0;
-      padding: 40px;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #000000;
+      color: white;
+      padding: 40px 20px;
+    }
+
     .container {
       max-width: 600px;
-      margin: auto;
+      margin: 0 auto;
     }
+
+    /* Profile image */
     img {
-      width: 250px;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 3px solid #ffffff;
       margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     }
+
+    /* Animated heading */
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    /* Student info */
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    /* Button-style links */
     .links a {
-      margin: 0 10px;
+      display: inline-block;
+      margin: 10px 10px;
+      padding: 10px 20px;
+      background-color: #0077b5;
+      color: white;
       text-decoration: none;
-      color: #0077b5;
       font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
+
+    .links a:hover {
+      background-color: #005f8e;
+    }
+
     .note {
-      margin-top: 20px;
-      color: #777;
+      margin-top: 30px;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    /* Animation keyframes */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-
-    <!-- 👇 Your picture first -->
+    <!-- Photo -->
     <img src="image/pawara.jpg" alt="Pawara Sithumina" />
 
-    <!-- 👇 Then your intro text -->
+    <!-- Animated Heading -->
     <h1>Hi, I'm Pawara Sithumina!</h1>
+
+    <!-- Subtext -->
     <p>I'm a 1st-year Data Science student at NIBM 🇱🇰</p>
-    
+
+    <!-- Buttons -->
     <div class="links">
       <a href="https://github.com/yourusername" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/pawara-sithumina-8b641b326" target="_blank">LinkedIn</a>
     </div>
 
+    <!-- Note -->
     <p class="note">This is my personal website. Projects and blogs coming soon!</p>
   </div>
 </body>
