@@ -5,7 +5,6 @@
   <title>Pawara Sithumina | Data Science Student</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Full page reset and layout */
     * {
       margin: 0;
       padding: 0;
@@ -21,11 +20,10 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto;
     }
 
-    /* Profile image */
     img {
       width: 220px;
       height: 220px;
@@ -36,21 +34,18 @@
       box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     }
 
-    /* Animated heading */
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
       animation: fadeInUp 2s ease-out;
     }
 
-    /* Student info */
     p {
       font-size: 16px;
       margin-bottom: 20px;
       color: #ccc;
     }
 
-    /* Button-style links */
     .links a {
       display: inline-block;
       margin: 10px 10px;
@@ -73,7 +68,42 @@
       font-style: italic;
     }
 
-    /* Animation keyframes */
+    section {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    section h2 {
+      font-size: 22px;
+      color: #ffffff;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    section ul li {
+      margin-bottom: 8px;
+    }
+
+    section ul li a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+
+    section ul li a:hover {
+      text-decoration: underline;
+    }
+
     @keyframes fadeInUp {
       0% {
         opacity: 0;
@@ -97,14 +127,25 @@
     <!-- Subtext -->
     <p>I'm a 1st-year Data Science student at NIBM 🇱🇰</p>
 
-    <!-- Buttons -->
+    <!-- Links -->
     <div class="links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://github.com/Pawarasithumina" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/pawara-sithumina-8b641b326" target="_blank">LinkedIn</a>
     </div>
 
-    <!-- Note -->
-    <p class="note">This is my personal website. Projects and blogs coming soon!</p>
+    <!-- Research Project Section -->
+    <section>
+      <h2>📊 Salon Research Project</h2>
+      <p>This project focuses on analyzing real-world salon environments around Colombo. The project includes SQL-based database design, ER modeling, and data collection using surveys.</p>
+      <ul>
+        <li><a href="salon-research/salon data base.sql" download>📁 SQL Database Schema</a></li>
+        <li><a href="salon-research/salon data base .ipynb" download>📓 Jupyter Notebook</a></li>
+        <li><a href="salon-research/salon data.csv" download>📊 Collected Dataset (CSV)</a></li>
+        <li><a href="salon-research/salon tables.mwb" download>🧩 ER Diagram (MySQL Workbench)</a></li>
+      </ul>
+    </section>
+
+    <p class="note">This is my personal website. More projects coming soon!</p>
   </div>
 </body>
 </html>
