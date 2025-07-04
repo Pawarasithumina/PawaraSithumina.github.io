@@ -14,9 +14,20 @@
       padding: 60px 20px;
     }
 
+    img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    }
+
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
+      animation: fadeInUp 2s ease-out;
     }
 
     p {
@@ -55,19 +66,40 @@
       border-color: #66ccff;
     }
 
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     @media (max-width: 600px) {
       .box {
         width: 100%;
         height: 120px;
         font-size: 20px;
       }
+
+      img {
+        width: 150px;
+        height: 150px;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Profile Image -->
+  <img src="image/pawara.jpg" alt="Pawara Sithumina" />
+
+  <!-- Heading -->
   <h1>Hi, I'm Pawara Sithumina!</h1>
   <p>I'm a 1st-year Data Science student at NIBM 🇱🇰</p>
 
+  <!-- Navigation Boxes -->
   <div class="container">
     <a class="box" href="research.html" target="_blank">📊 Research</a>
     <a class="box" href="reports.html" target="_blank">📄 Reports</a>
