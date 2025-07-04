@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pawara Sithumina | Data Science Student</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #fff;
       text-align: center;
-      padding: 60px 20px;
+      background-color: #000000;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     img {
@@ -32,38 +42,66 @@
 
     p {
       font-size: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       color: #ccc;
     }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
+    .links a {
+      display: inline-block;
+      margin: 10px 10px;
+      padding: 10px 20px;
+      background-color: #0077b5;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
 
-    .box {
-      width: 250px;
-      height: 150px;
-      background-color: #1a1a1a;
-      border: 2px solid #444;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .links a:hover {
+      background-color: #005f8e;
+    }
+
+    .note {
+      margin-top: 30px;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    section {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    section h2 {
       font-size: 22px;
-      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    section ul li {
+      margin-bottom: 8px;
+    }
+
+    section ul li a {
       color: #66ccff;
-      cursor: pointer;
-      transition: all 0.3s ease;
       text-decoration: none;
     }
 
-    .box:hover {
-      background-color: #222;
-      transform: scale(1.05);
-      border-color: #66ccff;
+    section ul li a:hover {
+      text-decoration: underline;
     }
 
     @keyframes fadeInUp {
@@ -76,33 +114,40 @@
         transform: translateY(0);
       }
     }
-
-    @media (max-width: 600px) {
-      .box {
-        width: 100%;
-        height: 120px;
-        font-size: 20px;
-      }
-
-      img {
-        width: 150px;
-        height: 150px;
-      }
-    }
   </style>
 </head>
 <body>
-  <!-- Profile Image -->
-  <img src="image/pawara.jpg" alt="Pawara Sithumina" />
-
-  <!-- Heading -->
-  <h1>Hi, I'm Pawara Sithumina!</h1>
-  <p>I'm a 1st-year Data Science student at NIBM 🇱🇰</p>
-
-  <!-- Navigation Boxes -->
   <div class="container">
-    <a class="box" href="research.html" target="_blank">📊 Research</a>
-    <a class="box" href="reports.html" target="_blank">📄 Reports</a>
+    <!-- Photo -->
+    <img src="image/pawara.jpg" alt="Pawara Sithumina" />
+
+    <!-- Animated Heading -->
+    <h1>Hi, I'm Pawara Sithumina!</h1>
+
+    <!-- Subtext -->
+    <p>I'm a 1st-year Data Science student at NIBM 🇱🇰</p>
+
+    <!-- Links -->
+    <div class="links">
+      <a href="https://github.com/Pawarasithumina" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/pawara-sithumina-8b641b326" target="_blank">LinkedIn</a>
+    </div>
+
+    <!-- Research Project Section -->
+    <section>
+      <h2>📊 Salon Research Project</h2>
+      <p>This project focuses on analyzing real-world salon environments around Colombo municipal council area. The project includes SQL-based database design, ER modeling, and data collection using surveys.</p>
+      <ul>
+  <li><a href="salon_database.sql" download>📁 SQL Database Schema</a></li>
+  <li><a href="salon_database.ipynb" download>📓 Jupyter Notebook</a></li>
+  <li><a href="salon_data.csv" download>📊 Collected Dataset (CSV)</a></li>
+  <li><a href="salon_tables.mwb" download>🧩 ER Diagram (MySQL Workbench)</a></li>
+</ul>
+
+
+    </section>
+
+    <p class="note">This is my personal website. More projects coming soon!</p>
   </div>
 </body>
 </html>
